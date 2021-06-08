@@ -361,10 +361,12 @@
 
     // Events.
     $this
-      .on("submit", function () {
+      .on("submit", function (event) {
+        event.preventDefault();
         $this
           .find("input[type=text],input[type=password],textarea")
           .each(function (event) {
+            //event.preventDefault();
             var i = $(this);
 
             if (i.attr("name").match(/-polyfill-field$/)) i.attr("name", "");
