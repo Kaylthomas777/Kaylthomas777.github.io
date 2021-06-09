@@ -1452,7 +1452,7 @@ body.is-preload #bg:before {
   transition-delay: 0.25s;
   padding: 3rem 2rem;
   max-height: 160rem;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #header .content .inner > :last-child {
